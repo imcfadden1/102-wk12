@@ -34,5 +34,13 @@ def ScoreFinder(names,scores,name):
     else:
         strOut=names[i]+' got a score of '+str(scores[i])
         PrintOutput(strOut)
+def Union(ls1,ls2):
+    ls3=[]
+    for c in range(len(ls1)):
+        ls3.append(ls1[c])
+    for x in range(len(ls2)):
+        if ls2[x] not in ls3:
+            ls3.append(ls2[x])
+    return ls3
 
         

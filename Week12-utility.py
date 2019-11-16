@@ -1,6 +1,6 @@
 def PrintOutput(string1):
     print("OUTPUT", string1)
-PrintOutput("Hello World")
+
 
 def LoadFile(str1):
     out=[]
@@ -9,4 +9,12 @@ def LoadFile(str1):
             out.append(row)
     PrintOutput(out)
 
-LoadFile('Caged.txt')
+def UpdateString(str1,char,i):
+    str2=''
+    for c in range(len(str1)):
+        if c==i:
+            str2+=char
+        else:
+            str2+=str1[c]
+    PrintOutput(str2)
+

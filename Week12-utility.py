@@ -42,5 +42,11 @@ def Union(ls1,ls2):
         if ls2[x] not in ls3:
             ls3.append(ls2[x])
     return ls3
+def Intersection(ls1,ls2):
+    ls3=[]
+    for c in range(len(ls1)):
+        if ls1[c] in ls2:
+            ls3.append(ls1[c])
+    return ls3
 
-        
+

@@ -24,3 +24,15 @@ def FindWordCount(ls1,str1):
         if ls1[c]==str1:
             count+=1
     PrintOutput(count)
+def ScoreFinder(names,scores,name):
+    i=0.5
+    for c in range(len(names)):
+        if name.upper()==names[c].upper():
+            i=c
+    if i==0.5:
+        PrintOutput("player not found")
+    else:
+        strOut=names[i]+' got a score of '+str(scores[i])
+        PrintOutput(strOut)
+
+        
